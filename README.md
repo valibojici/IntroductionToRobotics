@@ -67,3 +67,55 @@ The code is in [Homework#2](/Homework%232.ino) file.
 #### Demo
 A short working demo video can be viewed [here](https://www.youtube.com/watch?v=LWrGxgL1uvg).
 </details>
+
+
+<details><summary>
+
+## Homework #3 (control 7-segment display)
+</summary>
+
+#### Technical Task
+The task is to use the joystick to control the position of
+the segment and ”draw” on the display. The movement between segments
+should be natural (meaning they should jump from the current position
+only to neighbors, but without passing through ”walls”.
+##### The system has the following states:
+- **State 1** (default, but also initiated after a button press in State
+2): Current position blinking. Can use the joystick to move from
+one position to neighbors. Short pressing the button toggles state 2. Long pressing the button in state 1 resets the entire display by
+turning all the segments OFF and moving the current position to the
+decimal point.
+- **State 2** (initiated after a button press in State 1): The current
+segment stops blinking, adopting the state of the segment before
+selection (ON or OFF). Toggling the X (or Y, you chose) axis should
+change the segment state from ON to OFF or from OFF to ON.
+Clicking the joystick should save the segment state and exit back to
+state 1.
+  
+|Current segment| UP | DOWN | LEFT | Right|
+|:---:|:---:|:---:|:---:|:---:|
+**a** |N/A| g |f |b
+**b** | a | g| f| N/A
+**c**|g|d |e| dp|
+**d**|g| N/A| e| c
+**e**|g| d| N/A| c
+**f**|a| g| N/A| b
+**g**|a| d| N/A| N/A
+**dp**|N/A| N/A| c| N/A
+  
+**Long pressing the button to reset should only be available in State 1.**
+
+ **Joystick movements should be done with toggle.**
+  
+#### Components
+- 1 7-segment display
+- 1 joystick
+- resistors and wires (per logic)
+
+#### Solution
+The code is in [Homework#3](/Homework%233.ino) file.
+![20221110_142243](https://user-images.githubusercontent.com/68808448/201099821-1e100155-d85d-4f08-abcf-35ffee772819.jpg)
+  
+#### Demo
+A short working demo video can be viewed [here](https://www.youtube.com/watch?v=WQOvGhVXPyQ).
+</details>
