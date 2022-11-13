@@ -1,6 +1,3 @@
-//DS= [D]ata [S]torage - data
-//STCP= [ST]orage [C]lock [P]in latch
-//SHCP= [SH]ift register [C]lock [P]in clock
 const int latchPin = 11;  // STCP to 12 on Shift Register
 const int clockPin = 10;  // SHCP to 11 on Shift Register
 const int dataPin = 12;   // DS to 14 on Shift Register
@@ -69,7 +66,6 @@ byte byteEncodings[] = {
 
 
 void setup() {
-  // put your setup code here, to run once:
   pinMode(latchPin, OUTPUT);
   pinMode(clockPin, OUTPUT);
   pinMode(dataPin, OUTPUT);
