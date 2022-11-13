@@ -119,3 +119,46 @@ The code is in [Homework#3](/Homework%233.ino) file.
 #### Demo
 A short working demo video can be viewed [here](https://www.youtube.com/watch?v=WQOvGhVXPyQ).
 </details>
+
+
+<details><summary>
+
+## Homework #4 (control 4 digit 7-segment display)
+</summary>
+
+#### Technical Task
+The task is to use the joystick to move through the 4 digit 7
+segment displays digits, press the button to lock in on the current digit
+and use the other axis to increment or decrement the number. Keep the
+button pressed in the first state to reset all the digit values and the current position to the
+first digit.
+##### The system has the following states:
+- **State 1** you can use a joystick axis to cycle through the 4 digits;
+using the other axis does nothing. A blinking decimal point shows
+the current digit position. When pressing the button, you lock in on
+the selected digit and enter the state 2.
+- **State 2** in this state, the decimal point stays always on, no
+longer blinking and you can no longer use the axis to cycle through
+the 4 digits. Instead, using the other axis, you can increment on
+decrement the number on the current digit in hex. Pressing the button again returns you to the
+previous state. Also, keep in mind that when changing the number,
+you must increment it for each joystick movement - it should not
+work continuosly increment if you keep the joystick in one position.
+
+#### Components
+- 1 joystick
+- 1 74hc595 shift register
+- 1 4 digit 7-segment display
+- resistors and wires (per logic)
+
+#### Solution
+The code is in [Homework#4](/Homework%234.ino) file.
+![20221113_180437 1](https://user-images.githubusercontent.com/68808448/201532327-6bfa0f22-fbcc-4334-a015-17beab09ecd8.jpg)
+  ![image](https://user-images.githubusercontent.com/68808448/201532489-37fcea45-10d1-4b39-9f8b-09434ad90a5c.png)
+![image](https://user-images.githubusercontent.com/68808448/201532492-7040cc04-36a4-4819-b522-2f813013d234.png)
+
+
+
+#### Demo
+A short working demo video can be viewed [here](https://www.youtube.com/watch?v=8Rd4nDbRTFU).
+</details>
