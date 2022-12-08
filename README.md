@@ -177,7 +177,7 @@ The menu should include the following functionality:
    - Start game, starts the initial level of your game
    - Highscore: Initially, we have 0. Update it when the game is done. Highest possible score should be achieved by starting at a higher level. Save the top 5+ values in EEPROM with name and score.
    - Settings:
-      - Enter name. The name should be shown in highscore. Maybe somewhere else, as well?
+      - Enter name. The name should be shown in highscore.
       - Starting level: Set the starting level value. The idea is to be able to start from a higher level as well. Can be replaced with difficulty.
       - LCD contrast control (optional, it replaces the potentiometer). Save it to eeprom.
       - LCD brightness control (mandatory, must change LED wire that’s directly connected to 5v). Save it to eeprom.
@@ -206,7 +206,8 @@ Components:
 - wires and resistors
 
 #### Solution
-TO DO
+The code is in [Homework#5](/Homework%235) folder.
+![20221208_162328](https://user-images.githubusercontent.com/68808448/206479034-55755640-9d06-40f0-b91c-d6913266d96f.jpg)
 #### Demo
-TO DO
+A short working demo video can be viewed [here](https://youtu.be/nGkxko4q5Vk).
 </details>
