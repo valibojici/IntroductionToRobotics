@@ -206,8 +206,12 @@ Components:
 - wires and resistors
 
 #### Solution
-The code is in [Homework#5](/Homework%235) folder.
+The code is in [Homework#5](/Homework%235) folder. I implemented a simple snake game. 
 ![20221208_162328](https://user-images.githubusercontent.com/68808448/206479034-55755640-9d06-40f0-b91c-d6913266d96f.jpg)
+<img src="https://user-images.githubusercontent.com/68808448/206488291-d5462fa5-806c-46d8-811a-ff1edaa615a2.jpg" width=50%>
+<img src="https://user-images.githubusercontent.com/68808448/206488085-207d9ea8-e27f-403e-b0de-89fd30e84960.jpg" width=50%>
+<img src="https://user-images.githubusercontent.com/68808448/206488111-e450a6d6-0cbf-4b75-9060-a9340d5ead85.jpg" width=50%>
+
 #### Demo
 A short working demo video can be viewed [here](https://youtu.be/nGkxko4q5Vk).
 </details>
